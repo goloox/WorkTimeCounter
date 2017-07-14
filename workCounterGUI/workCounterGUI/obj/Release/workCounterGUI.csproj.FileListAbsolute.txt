@@ -1,0 +1,12 @@
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\bin\Release\workCounterGUI.exe.config
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\bin\Release\workCounterGUI.exe.manifest
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\bin\Release\workCounterGUI.application
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\bin\Release\workCounterGUI.exe
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\bin\Release\workCounterGUI.pdb
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.Form1.resources
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.Properties.Resources.resources
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.csproj.GenerateResource.Cache
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.exe.manifest
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.application
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.exe
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.pdb

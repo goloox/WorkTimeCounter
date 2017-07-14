@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "workCounterGUI", "workCounterGUI\workCounterGUI.csproj", "{7C370F0D-9E06-4AC8-AC3C-7BDD41472B04}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{5C66F850-F701-4728-BE6A-4615F0FD2B05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C370F0D-9E06-4AC8-AC3C-7BDD41472B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C370F0D-9E06-4AC8-AC3C-7BDD41472B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C370F0D-9E06-4AC8-AC3C-7BDD41472B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C370F0D-9E06-4AC8-AC3C-7BDD41472B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C66F850-F701-4728-BE6A-4615F0FD2B05}.Debug|Any CPU.ActiveCfg = Debug
+		{5C66F850-F701-4728-BE6A-4615F0FD2B05}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

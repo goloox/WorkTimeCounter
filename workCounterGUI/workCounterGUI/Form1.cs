@@ -68,6 +68,7 @@ namespace workCounterGUI
                 using (StreamWriter sw = File.CreateText(path4))
                 {
                     sw.Write(" ");
+                    
                 }
             }
 
@@ -111,7 +112,7 @@ namespace workCounterGUI
             
 
             readfromfile();
-
+            
           
            
 
@@ -170,9 +171,9 @@ namespace workCounterGUI
             {
                 using (StreamWriter sw = File.CreateText(path2))
                 {
-
+                    
                 }
-
+                
             }
             if (!File.Exists(path3))
             {
@@ -243,7 +244,7 @@ namespace workCounterGUI
             for (int i = allLinesText2.Count - 1; i >= Math.Max(0, allLinesText2.Count - 7); i--)
             {
                 listBox2.Items.Add(calc(Int32.Parse(allLinesText2[i])));
-
+               
             }
 
 
@@ -263,7 +264,7 @@ namespace workCounterGUI
             allLinesText1 = File.ReadAllLines(path2).ToList();
             allLinesText2 = File.ReadAllLines(path2).ToList();
             allLinesText3 = File.ReadAllLines(path3).ToList();
-
+            
             for (int i = allLinesText.Count - 1; i >= 0; i--)
             {
 
@@ -398,6 +399,7 @@ namespace workCounterGUI
             using (StreamWriter sw = File.AppendText(path2))
             {
                 sw.WriteLine(total);
+               
             }
 
             using (StreamWriter sw = File.CreateText(path3))
@@ -497,6 +499,19 @@ namespace workCounterGUI
             this.Show();
             WindowState = FormWindowState.Normal;
             notifyIcon1.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            List<String> linesList = File.ReadAllLines(path2).ToList();
+            linesList.Reverse();
+            linesList.RemoveAt(listBox1.SelectedIndex);
+            File.WriteAllLines(path2, linesList.ToArray());
+
+            List<String> linesList1 = File.ReadAllLines(path).ToList();
+            linesList1.Reverse();
+            linesList1.RemoveAt(listBox1.SelectedIndex);
+            File.WriteAllLines(path, linesList1.ToArray());
         }
     }
 

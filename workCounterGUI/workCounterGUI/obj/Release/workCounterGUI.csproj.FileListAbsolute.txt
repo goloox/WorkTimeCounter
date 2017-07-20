@@ -10,3 +10,4 @@ C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI
 C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.application
 C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.exe
 C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.pdb
+C:\Users\goloox\Desktop\workCounterGUI\workCounterGUI\obj\Release\workCounterGUI.csprojResolveAssemblyReference.cache

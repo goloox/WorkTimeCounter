@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="workCounterGUI.exe" size="370112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="workCounterGUI.exe" size="369664">
       <assemblyIdentity name="workCounterGUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cO2MLkQ0mZX16QojItvPE4dEPStbTIdMbhCj8fbFoIQ=</dsig:DigestValue>
+        <dsig:DigestValue>WKi90f9Ib58wBg80vMq2EIglVa/HtHkQs5SRpWXVgv4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

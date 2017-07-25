@@ -401,6 +401,7 @@ namespace workCounterGUI
                 sw.WriteLine(total);
                
             }
+           
 
             using (StreamWriter sw = File.CreateText(path3))
             {
@@ -506,12 +507,23 @@ namespace workCounterGUI
             List<String> linesList = File.ReadAllLines(path2).ToList();
             linesList.Reverse();
             linesList.RemoveAt(listBox1.SelectedIndex);
+            linesList.Reverse();
             File.WriteAllLines(path2, linesList.ToArray());
 
             List<String> linesList1 = File.ReadAllLines(path).ToList();
             linesList1.Reverse();
             linesList1.RemoveAt(listBox1.SelectedIndex);
+            linesList1.Reverse();
             File.WriteAllLines(path, linesList1.ToArray());
+
+            allLinesText.Clear();
+            allLinesText1.Clear();
+            allLinesText2.Clear();
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            tot = 0;
+
+            readfromfile();
         }
     }
 

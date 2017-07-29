@@ -53,7 +53,8 @@ namespace workCounterGUI
         DateTime value = new DateTime(2017, 5, 31, 16,00,00);
         DateTime value2 = new DateTime(2017, 6, 01, 08, 00, 00);
         int startTemp = 1;
-       
+
+        int showDays = 5;
 
         public Form1()
         {
@@ -62,6 +63,7 @@ namespace workCounterGUI
             t.Interval = 1000;
             t.Tick += T_Tick;
 
+           // numericUpDown1.Value = showDaysMax;
             if (!File.Exists(path4))
             {
 
@@ -111,7 +113,7 @@ namespace workCounterGUI
             
             
 
-            readfromfile();
+            readfromfile(showDays);
             
           
            
@@ -224,7 +226,7 @@ namespace workCounterGUI
             return (time.ToString("''dd':'hh':'mm':'ss''"));
         }
 
-        public void readfromfile()
+        public void readfromfile(int daysShow)
         {
             allLinesText = File.ReadAllLines(path).ToList();
             allLinesText1 = File.ReadAllLines(path1).ToList();
@@ -233,7 +235,7 @@ namespace workCounterGUI
 
 
 
-            for (int i = allLinesText.Count - 1; i >= Math.Max(0, allLinesText.Count - 7); i--)
+            for (int i = allLinesText.Count - 1; i >= Math.Max(0, allLinesText.Count - daysShow); i--)
             {
 
                 listBox1.Items.Add(allLinesText[i]);
@@ -241,7 +243,7 @@ namespace workCounterGUI
             }
 
 
-            for (int i = allLinesText2.Count - 1; i >= Math.Max(0, allLinesText2.Count - 7); i--)
+            for (int i = allLinesText2.Count - 1; i >= Math.Max(0, allLinesText2.Count - daysShow); i--)
             {
                 listBox2.Items.Add(calc(Int32.Parse(allLinesText2[i])));
                
@@ -249,7 +251,7 @@ namespace workCounterGUI
 
 
 
-            for (int i = allLinesText2.Count - 1; i >= Math.Max(0, allLinesText2.Count - 7); i--)
+            for (int i = allLinesText2.Count - 1; i >= Math.Max(0, allLinesText2.Count - daysShow); i--)
             {
                 tot += Int32.Parse(allLinesText2[i]);
 
@@ -364,7 +366,7 @@ namespace workCounterGUI
             listBox2.Items.Clear();
             tot = 0;
 
-            readfromfile();
+            readfromfile(showDays);
 
             button1.Enabled = false;
             t.Start();
@@ -388,7 +390,7 @@ namespace workCounterGUI
 
 
 
-            for (int i = allLinesText3.Count - 1; i >= Math.Max(0, allLinesText3.Count - 7); i--)
+            for (int i = allLinesText3.Count - 1; i >= 0; i--)
             {
                 total += Int32.Parse(allLinesText3[i]);
 
@@ -418,7 +420,7 @@ namespace workCounterGUI
             listBox2.Items.Clear();
             tot = 0;
 
-            readfromfile();
+            readfromfile(showDays);
 
             button1.Enabled = true;
             button2.Enabled = true;
@@ -465,7 +467,7 @@ namespace workCounterGUI
                 listBox2.Items.Clear();
                 tot = 0;
 
-                readfromfile();
+                readfromfile(showDays);
             }
         }
 
@@ -523,7 +525,23 @@ namespace workCounterGUI
             listBox2.Items.Clear();
             tot = 0;
 
-            readfromfile();
+            readfromfile(showDays);
+        }
+
+       
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            
+
+            allLinesText.Clear();
+            allLinesText1.Clear();
+            allLinesText2.Clear();
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            tot = 0;
+
+          
+            readfromfile(Convert.ToInt32(numericUpDown1.Value));
         }
     }
 

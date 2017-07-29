@@ -48,10 +48,13 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,7 +82,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(445, 0);
+            this.label4.Location = new System.Drawing.Point(449, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 24);
             this.label4.TabIndex = 5;
@@ -90,10 +93,10 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(450, 159);
+            this.textBox1.Location = new System.Drawing.Point(453, 128);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(147, 19);
+            this.textBox1.Size = new System.Drawing.Size(149, 19);
             this.textBox1.TabIndex = 7;
             this.textBox1.TabStop = false;
             // 
@@ -108,12 +111,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.25688F));
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 159);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 128);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.82051F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.17949F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(441, 105);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(444, 105);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
             // button1
@@ -122,7 +125,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(288, 86);
+            this.button1.Size = new System.Drawing.Size(290, 86);
             this.button1.TabIndex = 8;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -132,9 +135,9 @@
             // 
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(297, 3);
+            this.button2.Location = new System.Drawing.Point(299, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 86);
+            this.button2.Size = new System.Drawing.Size(142, 86);
             this.button2.TabIndex = 9;
             this.button2.Text = "Stop";
             this.button2.UseVisualStyleBackColor = true;
@@ -160,7 +163,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(600, 267);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(605, 236);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // listBox1
@@ -172,7 +175,7 @@
             this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(3, 3);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(441, 150);
+            this.listBox1.Size = new System.Drawing.Size(444, 119);
             this.listBox1.TabIndex = 12;
             this.listBox1.TabStop = false;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
@@ -184,9 +187,9 @@
             this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 20;
-            this.listBox2.Location = new System.Drawing.Point(450, 3);
+            this.listBox2.Location = new System.Drawing.Point(453, 3);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(147, 150);
+            this.listBox2.Size = new System.Drawing.Size(149, 119);
             this.listBox2.TabIndex = 13;
             this.listBox2.TabStop = false;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
@@ -216,7 +219,7 @@
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(597, 31);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(602, 31);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // panel1
@@ -241,9 +244,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(442, 9);
+            this.button3.Location = new System.Drawing.Point(364, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 56);
+            this.button3.Size = new System.Drawing.Size(127, 56);
             this.button3.TabIndex = 10;
             this.button3.Text = "Done";
             this.button3.UseVisualStyleBackColor = true;
@@ -257,7 +260,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(318, 9);
+            this.button4.Location = new System.Drawing.Point(257, 39);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(101, 26);
             this.button4.TabIndex = 11;
@@ -267,19 +270,41 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(241, 9);
+            this.button5.Location = new System.Drawing.Point(506, 12);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(55, 56);
+            this.button5.Size = new System.Drawing.Size(114, 56);
             this.button5.TabIndex = 12;
             this.button5.Text = "Delete";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(320, 13);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(38, 20);
+            this.numericUpDown1.TabIndex = 13;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.textBox2.Location = new System.Drawing.Point(245, 17);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(72, 13);
+            this.textBox2.TabIndex = 14;
+            this.textBox2.Text = "Days to show";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 406);
+            this.ClientSize = new System.Drawing.Size(699, 379);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -299,6 +324,7 @@
             this.tableLayoutPanel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,6 +350,8 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
